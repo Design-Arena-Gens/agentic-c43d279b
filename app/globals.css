@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-void-black text-white antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .glow-yellow {
+    box-shadow: 0 0 30px rgba(243, 230, 143, 0.3);
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 30px rgba(74, 242, 234, 0.2);
+  }
+
+  .glow-pink {
+    box-shadow: 0 0 30px rgba(239, 169, 182, 0.2);
+  }
+}
